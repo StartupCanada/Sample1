@@ -1,0 +1,13 @@
+class Repository:
+    def __init__(self, name, owner, description):
+        self.name = name
+        self.owner = owner
+        self.description = description
+        self.commits = []
+        
+    def add_commit(self, commit):
+        self.commits.append(commit)
+        
+    def get_commits(self):
+        return self.commits
+
